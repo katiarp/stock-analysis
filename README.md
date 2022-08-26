@@ -7,7 +7,7 @@ I reused part of the first code to do an **All Stocks Analysis** which simplifie
 
 Subsequently, Steve asked to broaden the analysis to the stock market. One of the challenges with this task is that this analysis will have a large data set, and the code I have worked with so far will unlikely perform as well. 
 
-## VBA Challenge
+## VBA Challenge Results
 
 Now that I was going to work with a large data set I decided to refactor the **All Stocks Analysis** code to improve time performance. The following code is the first code I used to analyze the DQ stock. 
  
@@ -133,5 +133,11 @@ When running this subroutine, I found that the elapsed time decreased significan
 ![image_name](/Ressources/VBA_Challenge_2017.png)
 
 ![image_name](/Ressources/VBA_Challenge_2018.png)
+
+Since I noticed that the refactored code did not use nested loops, I googled nested loops vs non nested loops performance and found some interesting answers. In [Quora](https://www.quora.com/Which-is-better-a-nested-loop-with-particular-depth-or-the-same-number-of-loops-one-after-the-other) I found that most people agreed that non-nested loops are more efficient due to the difference in time complexity for nested loops and non-nested loops respectively. People's answers in Quora go into very technical and mathematical explanations, but I was able to verify that the refactored code without nested loops executed much faster than the original code with nested loops. The refactored code ran in about 60 miliseconds, and it took almost half a second to run to the original code. 
+
+
+
+### Advantages and disadvantages
 
 Found in [Stackoverflow](https://stackoverflow.com/questions/43983284/what-are-the-advantages-and-disadvantages-of-refactoring-code-smell-in-software).
