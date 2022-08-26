@@ -136,7 +136,7 @@ When running this subroutine, I found that the elapsed time decreased significan
 
 Since I noticed that the refactored code did not use nested loops, I googled *nested loops vs non nested loops performance* and found some interesting answers. In [Quora](https://www.quora.com/Which-is-better-a-nested-loop-with-particular-depth-or-the-same-number-of-loops-one-after-the-other) I found that most people agreed that non-nested loops are more efficient due to the difference in *time complexity* between nested loops and non-nested loops. People's answers in Quora go into very technical explanations; however, I was able to verify that the refactored code without nested loops executed much faster than the original code with nested loops. The refactored code ran in about 60 miliseconds, whereas it took almost half a second to run to the original code. 
 
-### Advantages and disadvantages of refactoring code
+## Advantages and disadvantages of refactoring code
 
 According to an answer found in [Stack Overflow](https://stackoverflow.com/questions/43983284/what-are-the-advantages-and-disadvantages-of-refactoring-code-smell-in-software) refactoring code improves the software design, makes software easier to understand, helps find bugs, and helps program faster. In my personal experience with refactoring code, I find that one of the advantages is that we can make the code clearer and work faster, like in this particular exercise where we improved the code's performance.   
 
