@@ -1,11 +1,11 @@
 # Stock Analysis Project
 
-In this project, I analyzed green energy stocks for Steve’s parents who are interested in investing in green energy but haven’t done a lot of research yet. Steve wanted to analyze a few *green energy stocks* besides the *Daqo stock* that his parents had already invested in. 
+In this project, I analyzed *green energy stocks* for Steve’s parents who are interested in investing in *green energy* but haven’t done a lot of research yet. Steve wanted to analyze a few green energy stocks besides the **Daqo** stock that his parents had already invested in. 
 
 Initially, I calculated the **Daily Volume** and **Yearly Return** for the *Daqo stock* using an Excel macro to run the analysis. One of the findings was that the Daqo stock had dropped **62.6%** in **2018**. Since Daqo wasn’t the best option for Steve’s parents, I created a macro to analyze all the stocks to find a better option. 
 I reused part of the first code to do an **All Stocks Analysis** which simplified the task. 
 
-Subsequently, Steve asked to broaden the analysis to the stock market. One of the challenges with this task is that this analysis will have a large data set, and the code I have worked with so far will unlikely perform as well. 
+Subsequently, Steve asked to broaden the analysis to the all stock market. One of the challenges with this task is that this analysis will have a large data set, and the code I have worked with so far will unlikely perform as well as it is right now. 
 
 ## VBA Challenge Results
 
@@ -134,10 +134,15 @@ When running this subroutine, I found that the elapsed time decreased significan
 
 ![image_name](/Ressources/VBA_Challenge_2018.png)
 
-Since I noticed that the refactored code did not use nested loops, I googled nested loops vs non nested loops performance and found some interesting answers. In [Quora](https://www.quora.com/Which-is-better-a-nested-loop-with-particular-depth-or-the-same-number-of-loops-one-after-the-other) I found that most people agreed that non-nested loops are more efficient due to the difference in time complexity for nested loops and non-nested loops respectively. People's answers in Quora go into very technical and mathematical explanations, but I was able to verify that the refactored code without nested loops executed much faster than the original code with nested loops. The refactored code ran in about 60 miliseconds, and it took almost half a second to run to the original code. 
+Since I noticed that the refactored code did not use nested loops, I googled *nested loops vs non nested loops performance* and found some interesting answers. In [Quora](https://www.quora.com/Which-is-better-a-nested-loop-with-particular-depth-or-the-same-number-of-loops-one-after-the-other) I found that most people agreed that non-nested loops are more efficient due to the difference in *time complexity* between nested loops and non-nested loops. People's answers in Quora go into very technical explanations; however, I was able to verify that the refactored code without nested loops executed much faster than the original code with nested loops. The refactored code ran in about 60 miliseconds, whereas it took almost half a second to run to the original code. 
 
+### Advantages and disadvantages of refactoring code
 
+According to an answer found in [Stack Overflow](https://stackoverflow.com/questions/43983284/what-are-the-advantages-and-disadvantages-of-refactoring-code-smell-in-software) refactoring code improves the software design, makes software easier to understand, helps find bugs, and helps program faster. In my personal experience with refactoring code, I find that one of the advantages is that we can make the code clearer and work faster, like in this particular exercise where we improved the code's performance.   
 
-### Advantages and disadvantages
+One of the disadvantages is that you could break the existing code, in other words you could make it stop working if you don’t refactor it carefully.  This is a big risk for inexperienced programmers, or people who are starting to learn how to code.  It also takes time and resources.
 
-Found in [Stackoverflow](https://stackoverflow.com/questions/43983284/what-are-the-advantages-and-disadvantages-of-refactoring-code-smell-in-software).
+For this specific project, one of the advantages is that we were able to improve the execution time, and this will result in better user experience. For Steve particularly this means that he won't have to wait a lot of time to see the results when dealing with hundreds of thousands of records of stocks in the data.
+
+However, one possible disadvantage of refactoring this code is that we introduced 3 additional arrays, and at first the refactored code was harder to understand. It took me a great deal of time to refactor the code according to what was being asked; although, I believe that with more experience refactoring code will become easier for me. 
+
